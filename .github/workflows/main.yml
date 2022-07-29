@@ -15,9 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: run_test_script
     steps:
-      - uses: actions/checkout@v3
-        name: Check out repository
       - name: Run test script
         env:
           jenkins_api_token: ${{ secrets.JENKINS_API_TOKEN }}
-        run: curl --user "CThaw90:$jenkins_api_token" http://jenkins.gscbinc.com/userContent/test.sh | bash
+        run: curl --user "CThaw90:$jenkins_api_token" http://jenkins.gscbinc.com/userContent/scheck.sh | bash
