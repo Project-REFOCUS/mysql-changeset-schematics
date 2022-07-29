@@ -10,6 +10,7 @@ env:
   MYSQL_USER: refocus_schematic_check_user
   MYSQL_PORT: 3306
   MYSQL_DB: project_refocus_schematic_check
+  CHANGES_HOME: $GITHUB_WORKSPACE
 
 
 jobs:
