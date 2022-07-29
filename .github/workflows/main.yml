@@ -1,0 +1,23 @@
+# This workflow checks that there are no errors in the sql schematic instructions
+name: schematic-check
+
+on:
+	pull_request
+		branches: [ "main" ]
+
+env:
+  MYSQL_HOST: data.gscbinc.com
+  MYSQL_PORT: 3306
+
+
+jobs:
+  build:
+    runs-on: mysql
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: run_test_script
+      - shell: bash
+        env:
+          jenkins_api_token: ${{ secrets.JENKINS_API_TOKEN }}
+        run: curl --user "CThaw90:$jenkins_api_token" http://jenkins.gscbinc.com/userContent/test.sh | bash
