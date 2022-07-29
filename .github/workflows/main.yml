@@ -10,8 +10,6 @@ env:
   MYSQL_USER: refocus_schematic_check_user
   MYSQL_PORT: 3306
   MYSQL_DB: project_refocus_schematic_check
-  CHANGES_HOME: ${{ env.GITHUB_WORKSPACE }}
-
 
 jobs:
   build:
@@ -28,5 +26,6 @@ jobs:
         env:
           MYSQL_PWD: ${{ secrets.MYSQL_PASSWORD }}
           JENKINS_API_TOKEN: ${{ secrets.JENKINS_API_TOKEN }}
+          CHANGES_HOME: ${{ github.workspace }}
           USER: "$MYSQL_USER"
         run: curl --user "CThaw90:$JENKINS_API_TOKEN" http://jenkins.gscbinc.com/userContent/scheck.sh | bash
