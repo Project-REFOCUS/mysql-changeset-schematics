@@ -23,6 +23,7 @@ jobs:
         name: Run schematic check
         with:
           mysql-version: '8.0'
+      - run:
         env:
           MYSQL_PWD: ${{ secrets.MYSQL_PASSWORD }}
           JENKINS_API_TOKEN: ${{ secrets.JENKINS_API_TOKEN }}
