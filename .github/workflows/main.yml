@@ -23,6 +23,8 @@ jobs:
         name: Install mysql version 8
         with:
           mysql-version: '8.0'
+      - name: Run sanity check
+        run: ./test.sh
       - name: Run schematic check
         env:
           MYSQL_PWD: ${{ secrets.MYSQL_PASSWORD }}
