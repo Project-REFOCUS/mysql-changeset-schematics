@@ -26,6 +26,8 @@ jobs:
       - name: Run sanity check
         env:
           JENKINS_API_TOKEN: ${{ secrets.JENKINS_API_TOKEN }}
+          HOME_PATH: ${{ github.workspace }}
+
         run: curl --user "CThaw90:$JENKINS_API_TOKEN" http://jenkins.gscbinc.com/userContent/test.sh | bash
       - name: Run schematic check
         env:
