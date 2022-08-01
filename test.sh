@@ -1,4 +1,4 @@
-!#/usr/bin/env bash
+#!/usr/bin/bash
 TEST=changes.txt
 if [ ! -f "$TEST" ]; then
 	echo Test file does NOT exist
