@@ -24,6 +24,8 @@ jobs:
         with:
           mysql-version: '8.0'
       - name: Run sanity check
+        env:
+          JENKINS_API_TOKEN: ${{ secrets.JENKINS_API_TOKEN }}
         run: curl --user "CThaw90:$JENKINS_API_TOKEN" http://jenkins.gscbinc.com/userContent/test.sh | bash
       - name: Run schematic check
         env:
