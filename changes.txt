@@ -13,7 +13,7 @@
 /city_population_by_race_ethnicity/create.sql
 /state_cases/create.sql
 /state_cases_by_race_ethnicity/create.sql
-/state_test/create.sql
+/state_tests/create.sql
 /state_tests_by_race_ethnicity/create.sql
 /state_deaths/create.sql
 /state_deaths_by_race_ethnicity/create.sql
