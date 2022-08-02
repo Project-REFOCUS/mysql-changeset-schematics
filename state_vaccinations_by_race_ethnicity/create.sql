@@ -1,5 +1,5 @@
 -- Create state_vaccinations_by_race_ethnicity table
-CREATE TABLE state_cases_by_race_ethnicity (
+CREATE TABLE state_vaccinations_by_race_ethnicity (
 	id INTEGER UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	vaccinations INTEGER UNSIGNED NOT NULL,
 	calendar_date_id SMALLINT UNSIGNED NOT NULL,
