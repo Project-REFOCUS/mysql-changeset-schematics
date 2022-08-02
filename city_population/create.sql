@@ -6,6 +6,6 @@ CREATE TABLE city_population (
 	calendar_date_id SMALLINT UNSIGNED NOT NULL,
 	city_id SMALLINT UNSIGNED NOT NULL,
 
-	FOREIGN KEY (calendar_date_id) REFERENCES calendar_date (id)
+	FOREIGN KEY (calendar_date_id) REFERENCES calendar_date (id),
 	FOREIGN KEY (city_id) REFERENCES city (id)
 );
