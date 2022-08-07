@@ -1,3 +1,6 @@
+/holiday_type/create.sql
+/holiday_type/populate.sql
+/holiday/create.sql
 /calendar_day/create.sql
 /calendar_month/create.sql
 /calendar_date/create.sql
@@ -23,6 +26,3 @@
 /fatal_police_shootings/create.sql
 /evictions/create.sql
 /google_mobility_reports/create.sql
-/holiday_type/create.sql
-/holiday_type/populate.sql
-/holiday/create.sql
