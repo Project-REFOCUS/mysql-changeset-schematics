@@ -5,7 +5,9 @@ CREATE TABLE calendar_date (
 	week_number TINYINT UNSIGNED NOT NULL,
 	calendar_month_id TINYINT UNSIGNED NOT NULL,
 	calendar_day_id TINYINT UNSIGNED NOT NULL,
+	holiday_id TINYINT UNSIGNED NOT NULL,
 
 	FOREIGN KEY (calendar_month_id) REFERENCES calendar_month (id),
-	FOREIGN KEY (calendar_day_id) REFERENCES calendar_day (id)
+	FOREIGN KEY (calendar_day_id) REFERENCES calendar_day (id),
+	FOREIGN KEY (holiday_id) REFERENCES holiday (id)
 );
