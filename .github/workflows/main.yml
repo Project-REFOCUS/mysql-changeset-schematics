@@ -1,0 +1,32 @@
+# This workflow checks that there are no errors in the sql schematic instructions
+name: schematic-check
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  MYSQL_HOST: data.gscbinc.com
+  MYSQL_USER: refocus_schematic_check_user
+  MYSQL_PORT: 3306
+  MYSQL_DB: project_refocus_schematic_check
+  CHANGES_FILE: changes.txt
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: run_schematic_check
+    steps:
+      - uses: actions/checkout@v3
+        name: Checkout repository
+      - uses: shogo82148/actions-setup-mysql@v1
+        name: Install mysql version 8
+        with:
+          mysql-version: '8.0'
+      - name: Run schematic check
+        env:
+          MYSQL_PWD: ${{ secrets.MYSQL_PASSWORD }}
+          JENKINS_API_TOKEN: ${{ secrets.JENKINS_API_TOKEN }}
+          CHANGES_HOME: ${{ github.workspace }}
+          USER: refocus_schematic_check_user
+        run: curl --user "CThaw90:$JENKINS_API_TOKEN" http://jenkins.gscbinc.com/userContent/scheck.sh | bash
