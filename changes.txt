@@ -26,3 +26,4 @@
 /holiday_type/create.sql
 /holiday_type/populate.sql
 /holiday/create.sql
+/calendar_day/populate.sql
