@@ -19,7 +19,9 @@ INSERT INTO holiday (name, holiday_type_id) VALUES
 	('Day after Thanksgiving', 3),
 	('Christmas Holiday', 3),
 	('Christmas Day (in lieu)', 3),
+	('Christmas Eve', 1),
 	('Christmas Day', 1),
 	('New Year\'s Day Holiday', 3),
+	('New Year\'s Eve', 3),
 	('New Year\'s Day (in lieu)', 1)
 ;
