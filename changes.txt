@@ -32,3 +32,4 @@
 /holiday/populate.sql
 /holiday_calendar_date/create.sql
 /county/increase_name_column.sql
+/city/increase_name_column.sql
