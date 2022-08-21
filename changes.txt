@@ -31,3 +31,4 @@
 /holiday/drop_column_calendar_date.sql
 /holiday/populate.sql
 /holiday_calendar_date/create.sql
+/county/increase_name_column.sql
