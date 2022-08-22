@@ -33,3 +33,9 @@
 /holiday_calendar_date/create.sql
 /county/increase_name_column.sql
 /city/increase_name_column.sql
+/state_population_2020/create.sql
+/county_population_2020/create.sql
+/city_population_2020/create.sql
+/state_population_2020_by_race_ethnicity/create.sql
+/county_population_2020_by_race_ethnicity/create.sql
+/city_population_2020_by_race_ethnicity/create.sql
