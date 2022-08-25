@@ -39,3 +39,5 @@
 /state_population_2020_by_race_ethnicity/create.sql
 /county_population_2020_by_race_ethnicity/create.sql
 /city_population_2020_by_race_ethnicity/create.sql
+/race_ethnicity/increase_name_column_size.sql
+/race_ethnicity/populate.sql
