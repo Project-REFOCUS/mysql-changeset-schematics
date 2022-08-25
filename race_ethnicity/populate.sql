@@ -4,5 +4,6 @@ INSERT INTO race_ethnicity (name) VALUES
 	('Black or African American'),
 	('American Indian and Alaska Native'),
 	('Asian'),
-	('Native Hawaiian and Other Pacific Islander')
+	('Native Hawaiian and Other Pacific Islander'),
+	('Other')
 ;
