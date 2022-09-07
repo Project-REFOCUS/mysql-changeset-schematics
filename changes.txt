@@ -50,3 +50,4 @@
 /fatal_police_shootings/lowercase_armed_column.sql
 /fatal_police_shootings/lowercase_gender_column.sql
 /race_ethnicity/populate_hispanic_latino_unknown.sql
+/fatal_police_shootings/add_column_public_id.sql
