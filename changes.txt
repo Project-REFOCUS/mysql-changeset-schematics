@@ -41,3 +41,11 @@
 /city_population_2020_by_race_ethnicity/create.sql
 /race_ethnicity/increase_name_column_size.sql
 /race_ethnicity/populate.sql
+/state_vaccinations/add_column_distributed.sql
+/state_vaccinations/add_column_administered.sql
+/state_vaccinations/add_column_administered_one_dose.sql
+/state_vaccinations/add_column_administered_two_dose.sql
+/state_vaccinations/drop_column_vaccinations.sql
+/fatal_police_shootings/lowercase_age_column.sql
+/fatal_police_shootings/lowercase_armed_column.sql
+/fatal_police_shootings/lowercase_gender_column.sql
