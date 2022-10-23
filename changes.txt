@@ -52,3 +52,4 @@
 /race_ethnicity/populate_hispanic_latino_unknown.sql
 /fatal_police_shootings/add_column_public_id.sql
 /race_ethnicity/update_unknown_value_typo.sql
+/fatal_police_shootings/increase_column_name.sql
