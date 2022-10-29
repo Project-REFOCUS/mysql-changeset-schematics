@@ -56,3 +56,4 @@
 /apha_racism_declarations/create.sql
 /covid_behind_bars/create.sql
 /covid_behind_bars/default_resident_active_staff_active_columns.sql
+/covid_behind_bars/increase_integer_column_ranges.sql
