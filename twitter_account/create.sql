@@ -1,0 +1,7 @@
+-- Create twitter account table 
+CREATE TABLE twitter_account (
+	id SMALLINT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	twitter_id BIGINT UNSIGNED NOT NULL UNIQUE,
+	name TEXT NOT NULL,
+	username VARCHAR(20) NOT NULL UNIQUE
+);

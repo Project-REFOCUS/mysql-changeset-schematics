@@ -59,3 +59,7 @@
 /covid_behind_bars/increase_integer_column_ranges.sql
 /osha_complaints/create.sql
 /osha_complaints/add_upa_number_column.sql
+/twitter_account/create.sql
+/twitter_terms/create.sql
+/tweets/create.sql
+/twitter_terms_frequency/create.sql
