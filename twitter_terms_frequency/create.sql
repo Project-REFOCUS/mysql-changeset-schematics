@@ -6,7 +6,7 @@ CREATE TABLE twitter_terms_frequency (
 	twitter_terms_id INTEGER UNSIGNED NOT NULL,
 	calendar_date_id SMALLINT UNSIGNED NOT NULL,
 	
-	FOREIGN KEY (tweets_id) REFERENCES twitter_account (id),
+	FOREIGN KEY (tweets_id) REFERENCES tweets (id),
 	FOREIGN KEY (twitter_terms_id) REFERENCES twitter_terms (id),
 	FOREIGN KEY (calendar_date_id) REFERENCES calendar_date (id)
 );
