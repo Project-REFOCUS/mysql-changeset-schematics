@@ -63,3 +63,7 @@
 /twitter_terms/create.sql
 /tweets/create.sql
 /twitter_terms_frequency/create.sql
+/twitter_account_type/create.sql
+/twitter_account/add_column_twitter_account_type_id.sql
+/twitter_account/add_foreign_key_to_twitter_account_type.sql
+/twitter_account_state/create.sql
