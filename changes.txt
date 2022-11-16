@@ -71,5 +71,5 @@
 /twitter_terms_frequency/drop_column_twitter_account_id.sql
 /twitter_terms_frequency/add_column_tweets_id.sql
 /twitter_terms_frequency/add_foreign_key_to_tweets.sql
-/twitter_terms_frequency/drop_foreign_key_calendar_date.sql
+/twitter_terms_frequency/drop_foreign_key_to_calendar_date.sql
 /twitter_terms_frequency/drop_column_calendar_date_id.sql
