@@ -75,3 +75,5 @@
 /twitter_terms_frequency/drop_column_calendar_date_id.sql
 /wastewater_metrics/create.sql
 /wastewater_metrics/increase_percentile_change_column.sql
+/city/drop_county_id_foreign_key_column.sql
+/county_cities/create.sql
