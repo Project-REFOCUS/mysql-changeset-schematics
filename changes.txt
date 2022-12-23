@@ -82,4 +82,4 @@
 /city_type/create.sql
 /city_type/create_records.sql
 /city/add_city_type_id.sql
-/city/add_forieng_key_to_city_type.sql
+/city/add_foreign_key_to_city_type.sql
