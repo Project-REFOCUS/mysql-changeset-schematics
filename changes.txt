@@ -78,3 +78,4 @@
 /city/drop_foreign_key_to_county.sql
 /city/drop_county_id_column.sql
 /county_cities/create.sql
+/city/add_fips_column.sql

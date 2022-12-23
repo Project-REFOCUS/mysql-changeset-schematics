@@ -1,0 +1,2 @@
+-- Add FIPS code column
+ALTER TABLE city ADD COLUMN fips VARCHAR(12) NULL UNIQUE;
