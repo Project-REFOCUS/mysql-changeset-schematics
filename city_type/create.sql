@@ -1,0 +1,5 @@
+-- Create city_type table
+CREATE TABLE city_type (
+	id TINYINT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(30) NOT NULL UNIQUE
+);
