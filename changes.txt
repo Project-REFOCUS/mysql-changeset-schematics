@@ -86,3 +86,4 @@
 /city/drop_name_unique_index.sql
 /city/drop_name_duplicate_unique_index.sql
 /city/add_name_fips_unique_index.sql
+/city/drop_fips_unique_index.sql
