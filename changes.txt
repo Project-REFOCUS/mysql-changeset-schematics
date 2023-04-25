@@ -88,3 +88,5 @@
 /city/add_name_fips_unique_index.sql
 /city/drop_fips_unique_index.sql
 /county_cities/add_county_city_unique_index.sql
+/ej_data_field/create.sql
+/ej_data_value/create.sql
