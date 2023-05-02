@@ -1,0 +1,9 @@
+-- Create census_tract table
+CREATE TABLE census_tract (
+	id INTEGER UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(75) NOT NULL UNIQUE,
+	fips VARCHAR(15) NOT NULL UNIQUE,
+	county_id SMALLINT UNSIGNED NOT NULL,
+
+	FOREIGN KEY (county_id) REFERENCES county (id)
+);

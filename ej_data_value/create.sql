@@ -4,6 +4,8 @@ CREATE TABLE ej_data_value (
 	year SMALLINT UNSIGNED NOT NULL,
 	value VARCHAR(20) NOT NULL,
 	ej_data_field_id TINYINT UNSIGNED NOT NULL,
+	block_group_id INTEGER UNSIGNED NOT NULL,
 
 	FOREIGN KEY (ej_data_field_id) REFERENCES ej_data_field (id)
+	FOREIGN KEY (block_group_id) REFERENCES block_group (id)
 );
