@@ -6,6 +6,6 @@ CREATE TABLE ej_data_value (
 	ej_data_field_id TINYINT UNSIGNED NOT NULL,
 	block_group_id INTEGER UNSIGNED NOT NULL,
 
-	FOREIGN KEY (ej_data_field_id) REFERENCES ej_data_field (id)
+	FOREIGN KEY (ej_data_field_id) REFERENCES ej_data_field (id),
 	FOREIGN KEY (block_group_id) REFERENCES block_group (id)
 );
