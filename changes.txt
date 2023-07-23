@@ -92,3 +92,4 @@
 /block_group/create.sql
 /ej_data_field/create.sql
 /ej_data_value/create.sql
+/county_deaths/create.sql
