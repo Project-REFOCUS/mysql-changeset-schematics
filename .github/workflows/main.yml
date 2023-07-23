@@ -29,4 +29,5 @@ jobs:
           JENKINS_API_TOKEN: ${{ secrets.JENKINS_API_TOKEN }}
           CHANGES_HOME: ${{ github.workspace }}
           USER: refocus_schematic_check_user
+          MYSQL_HOME: ""
         run: curl --user "CThaw90:$JENKINS_API_TOKEN" http://jenkins.gscbinc.com/userContent/scheck.sh | bash
