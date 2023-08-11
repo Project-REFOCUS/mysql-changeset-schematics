@@ -23,6 +23,14 @@ jobs:
         name: Install mysql version 8
         with:
           mysql-version: '8.0'
+      - uses: keithweaver/aws-s3-github-action@v1.0.0
+        with:
+          command: cp
+          source: s3://project-refocus-shellscripts/scheck.sh
+          destination: ./scheck.sh
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: us-east-1
       - name: Run schematic check
         env:
           MYSQL_PWD: ${{ secrets.MYSQL_PASSWORD }}
@@ -30,4 +38,4 @@ jobs:
           CHANGES_HOME: ${{ github.workspace }}
           USER: refocus_schematic_check_user
           MYSQL_HOME: ""
-        run: curl --user "CThaw90:$JENKINS_API_TOKEN" http://jenkins.gscbinc.com/userContent/scheck.sh | bash
+        run: bash ./scheck.sh
