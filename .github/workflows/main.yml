@@ -38,5 +38,4 @@ jobs:
           CHANGES_HOME: ${{ github.workspace }}
           USER: refocus_schematic_check_user
           MYSQL_HOME: ""
-        run: chmod +x ./scheck.sh && ./scheck.sh
-        shell: bash
+        run: bash ./scheck.sh
