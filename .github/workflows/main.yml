@@ -39,3 +39,4 @@ jobs:
           USER: refocus_schematic_check_user
           MYSQL_HOME: ""
         run: chmod u+x scheck.sh && ./scheck.sh
+        shell: bash
