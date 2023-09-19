@@ -94,3 +94,6 @@
 /ej_data_value/create.sql
 /county_deaths/create.sql
 /metro_area/create.sql
+/zipcode/drop_city_id_foreign_key.sql
+/zipcode/drop_city_id_column.sql
+/city_zipcodes/create.sql
