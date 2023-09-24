@@ -98,3 +98,4 @@
 /zipcode/drop_city_id_column.sql
 /city_zipcodes/create.sql
 /snap_data/create.sql
+/snap_data/add_column_total_households.sql
