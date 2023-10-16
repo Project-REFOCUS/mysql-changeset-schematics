@@ -101,3 +101,5 @@
 /motor_vehicle_collisions/create.sql
 /market_application_type/create.sql
 /wholesale_markets/create.sql
+/childcare_type/create.sql
+/childcare_center/create.sql
