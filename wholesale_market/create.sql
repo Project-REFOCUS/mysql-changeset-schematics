@@ -9,7 +9,7 @@ CREATE TABLE wholesale_market (
     effective_date_id SMALLINT UNSIGNED,
     expiration_date_id SMALLINT UNSIGNED,
 
-    FOREIGN KEY (application_type_id) REFERENCES market_application_type (id),
+    FOREIGN KEY (market_application_type_id) REFERENCES market_application_type (id),
     FOREIGN KEY (zipcode_id) REFERENCES zipcode (id),
     FOREIGN KEY (disposition_date_id) REFERENCES calendar_date (id),
     FOREIGN KEY (effective_date_id) REFERENCES calendar_date (id),
