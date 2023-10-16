@@ -99,5 +99,5 @@
 /city_zipcodes/create.sql
 /snap_data/create.sql
 /motor_vehicle_collisions/create.sql
-/childcare_center/create.sql
 /childcare_type/create.sql
+/childcare_center/create.sql
