@@ -3,7 +3,7 @@ CREATE TABLE wholesale_market (
     market VARCHAR(60) NOT NULL,
     public_id VARCHAR(15) NOT NULL,
     account_name VARCHAR(100),
-    application_type_id SMALLINT UNSIGNED NOT NULL,
+    market_application_type_id SMALLINT UNSIGNED NOT NULL,
     zipcode_id SMALLINT UNSIGNED NOT NULL,
     disposition_date_id SMALLINT UNSIGNED NOT NULL,
     effective_date_id SMALLINT UNSIGNED,
