@@ -99,5 +99,5 @@
 /city_zipcodes/create.sql
 /snap_data/create.sql
 /motor_vehicle_collisions/create.sql
-/wholesale_market_application_type/create.sql
+/market_application_type/create.sql
 /wholesale_markets/create.sql
