@@ -1,7 +1,7 @@
 CREATE TABLE wholesale_market (
     id SMALLINT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     market VARCHAR(60) NOT NULL,
-    bic_number VARCHAR(15) NOT NULL,
+    public_id VARCHAR(15) NOT NULL,
     account_name VARCHAR(100),
     application_type_id SMALLINT UNSIGNED NOT NULL,
     zipcode_id SMALLINT UNSIGNED NOT NULL,
