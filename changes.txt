@@ -103,3 +103,4 @@
 /wholesale_market/create.sql
 /childcare_type/create.sql
 /childcare_center/create.sql
+/wholesale_market/increase_public_key_column.sql
