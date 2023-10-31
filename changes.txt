@@ -106,3 +106,6 @@
 /wholesale_market/increase_public_key_column.sql
 /wholesale_market/add_wholesale_date_column_null_constraint.sql
 /wholesale_market/remove_effective_date_column.sql
+/wholesale_market/remove_disposition_date_column.sql
+/wholesale_market/remove_expiration_date_column.sql
+/wholesale_market/add_wholesale_account_name_unique_constraint.sql
