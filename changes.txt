@@ -109,3 +109,4 @@
 /wholesale_market/remove_disposition_date_column.sql
 /wholesale_market/remove_expiration_date_column.sql
 /wholesale_market/add_wholesale_account_name_unique_constraint.sql
+/wholesale_market/remove_public_id_unique_contraint.sql
