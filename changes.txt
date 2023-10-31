@@ -107,3 +107,4 @@
 /wholesale_market/add_wholesale_date_column_null_constraint.sql
 /wholesale_market/remove_effective_date_column.sql
 /childcare_center/remove_center_public_id_column.sql
+/childcare_center/add_center_name_unique_constraint.sql
