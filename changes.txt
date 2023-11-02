@@ -112,3 +112,4 @@
 /wholesale_market/remove_public_id_unique_contraint.sql
 /childcare_center/remove_center_public_id_column.sql
 /childcare_center/add_center_name_unique_constraint.sql
+/employment_status/create.sql
