@@ -117,4 +117,3 @@
 /zipcode_population_2020/create.sql
 /census_tract_population_2020/create.sql
 /block_group_population_2020/create.sql
-
