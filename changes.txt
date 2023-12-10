@@ -114,4 +114,7 @@
 /childcare_center/add_center_name_unique_constraint.sql
 /employment_status/create.sql
 /wholesale_market/remove_public_id_column.sql
+/zipcode_population_2020/create.sql
+/census_tract_population_2020/create.sql
+/block_group_population_2020/create.sql
 /census_tract/increase_name_column.sql
