@@ -4,8 +4,6 @@ name: mysql-deployment
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 env:
   MYSQL_HOST: data.gscbinc.com
@@ -75,7 +73,7 @@ jobs:
 
   staging-deployment:
     runs-on: ubuntu-latest
-    environment: development
+    environment: staging
     steps:
       - uses: actions/checkout@v4
         name: Checkout repository
