@@ -4,6 +4,8 @@ name: mysql-deployment
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   sandbox-deployment:
@@ -16,7 +18,7 @@ jobs:
         name: Install mysql version 8
         with:
           mysql-version: '8.0'
-      - uses: keithweaver/aws-s3-github-actions@v1.0.0
+      - uses: keithweaver/aws-s3-github-action@v1.0.0
         name: Download database changesets scripts from S3
         with:
           command: cp
@@ -42,7 +44,7 @@ jobs:
         name: Install mysql version 8
         with:
           mysql-version: '8.0'
-      - uses: keithweaver/aws-s3-github-actions@v1.0.0
+      - uses: keithweaver/aws-s3-github-action@v1.0.0
         name: Download database changesets scripts from S3
         with:
           command: cp
@@ -68,7 +70,7 @@ jobs:
         name: Install mysql version 8
         with:
           mysql-version: '8.0'
-      - uses: keithweaver/aws-s3-github-actions@v1.0.0
+      - uses: keithweaver/aws-s3-github-action@v1.0.0
         name: Download database changesets scripts from S3
         with:
           command: cp
