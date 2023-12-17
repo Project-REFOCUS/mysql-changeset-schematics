@@ -22,7 +22,7 @@ jobs:
         name: Download database changesets scripts from S3
         with:
           command: cp
-          source: s3//project-refocus-shellscripts/dbcc.sh
+          source: s3://project-refocus-shellscripts/dbcc.sh
           destination: ./dbcc.sh
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -48,7 +48,7 @@ jobs:
         name: Download database changesets scripts from S3
         with:
           command: cp
-          source: s3//project-refocus-shellscripts/dbcc.sh
+          source: s3://project-refocus-shellscripts/dbcc.sh
           destination: ./dbcc.sh
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -74,7 +74,7 @@ jobs:
         name: Download database changesets scripts from S3
         with:
           command: cp
-          source: s3//project-refocus-shellscripts/dbcc.sh
+          source: s3://project-refocus-shellscripts/dbcc.sh
           destination: ./dbcc.sh
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
