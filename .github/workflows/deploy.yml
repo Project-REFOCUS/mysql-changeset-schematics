@@ -12,6 +12,7 @@ env:
   MYSQL_PORT: 3306
   CHANGES_FILE: changes.txt
   CHANGES_TABLE: project_refocus
+  LOGIN_PATH: remote
 
 jobs:
   sandbox-deployment:
