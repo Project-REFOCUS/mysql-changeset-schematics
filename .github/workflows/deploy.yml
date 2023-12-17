@@ -1,0 +1,86 @@
+# This workflow deploys mysql changesets to the higher order environments
+name: mysql-deployment
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  sandbox-deployment:
+    runs-on: ubuntu-latest
+    environment: sandbox
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout repository
+      - uses: shogo82148/actions-setup-mysql@v1
+        name: Install mysql version 8
+        with:
+          mysql-version: '8.0'
+      - uses: keithweaver/aws-s3-github-actions@v1.0.0
+        name: Download database changesets scripts from S3
+        with:
+          command: cp
+          source: s3//project-refocus-shellscripts/dbcc.sh
+          destination: ./dbcc.sh
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: us-east-1
+      - name: Generate MySQL login file
+        run: mysql_config_editor set --login-path=remote --user ${{ vars.MYSQL_USER }} --host ${{ vars.MYSQL_HOST }}
+      - name: Execute database changesets
+        run: bash ./dbcc.sh
+        env:
+          APP_DB: ${{ vars.MYSQL_DATABASE }}
+          MYSQL_PWD: ${{ secrets.MYSQL_PASSWORD }}
+  development-deployment:
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout repository
+      - uses: shogo82148/actions-setup-mysql@v1
+        name: Install mysql version 8
+        with:
+          mysql-version: '8.0'
+      - uses: keithweaver/aws-s3-github-actions@v1.0.0
+        name: Download database changesets scripts from S3
+        with:
+          command: cp
+          source: s3//project-refocus-shellscripts/dbcc.sh
+          destination: ./dbcc.sh
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: us-east-1
+      - name: Generate MySQL login file
+        run: mysql_config_editor set --login-path=remote --user ${{ vars.MYSQL_USER }} --host ${{ vars.MYSQL_HOST }}
+      - name: Execute database changesets
+        run: bash ./dbcc.sh
+        env:
+          APP_DB: ${{ vars.MYSQL_DATABASE }}
+          MYSQL_PWD: ${{ secrets.MYSQL_PASSWORD }}
+  staging-deployment:
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout repository
+      - uses: shogo82148/actions-setup-mysql@v1
+        name: Install mysql version 8
+        with:
+          mysql-version: '8.0'
+      - uses: keithweaver/aws-s3-github-actions@v1.0.0
+        name: Download database changesets scripts from S3
+        with:
+          command: cp
+          source: s3//project-refocus-shellscripts/dbcc.sh
+          destination: ./dbcc.sh
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: us-east-1
+      - name: Generate MySQL login file
+        run: mysql_config_editor set --login-path=remote --user ${{ vars.MYSQL_USER }} --host ${{ vars.MYSQL_HOST }}
+      - name: Execute database changesets
+        run: bash ./dbcc.sh
+        env:
+          APP_DB: ${{ vars.MYSQL_DATABASE }}
+          MYSQL_PWD: ${{ secrets.MYSQL_PASSWORD }}
