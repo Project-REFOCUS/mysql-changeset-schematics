@@ -118,3 +118,7 @@
 /census_tract_population_2020/create.sql
 /block_group_population_2020/create.sql
 /census_tract/increase_name_column.sql
+/fatal_police_shootings/drop_column_manner_of_death.sql
+/fatal_police_shootings/drop_fk_race_ethnicity_id.sql
+/fatal_police_shootings_race_ethnicity/create.sql
+
