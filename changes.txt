@@ -121,3 +121,4 @@
 /fatal_police_shootings/drop_column_manner_of_death.sql
 /fatal_police_shootings/drop_fk_race_ethnicity_id.sql
 /fatal_police_shootings_race_ethnicity/create.sql
+/fatal_police_shootings/drop_column_race_ethnicity_id.sql
